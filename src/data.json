@@ -1,0 +1,45 @@
+{
+  "data": [{
+      "componentName": "func-one",
+      "componentData": {
+        "name": "学校",
+        "content": "学校简介"
+
+      }
+    },
+    {
+      "componentName": "func-two",
+      "componentData": {
+        "name": "班级通知公告",
+        "list": [{
+            "title": "明天放假3天",
+            "time": "2018-8-23"
+          },
+          {
+            "title": "下周开展集体活动",
+            "time": "2018-8-27"
+          },
+          {
+            "title": "下下周集体上交班费",
+            "time": "2018-9-3"
+          }
+        ]
+
+      }
+    },
+    {
+      "componentName": "func-three",
+      "componentData": {
+        "name": "值日生",
+        "list": [{
+            "name": "张三"
+          },
+          {
+            "name": "李四"
+          }
+        ]
+
+      }
+    }
+  ]
+}
