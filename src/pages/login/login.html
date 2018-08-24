@@ -1,0 +1,32 @@
+<ion-content padding>
+  <div class="logo_box">
+    <div class="logo">logo</div>
+  </div>
+
+  <div class="login_type">
+    <div class="num_acount">账号登录</div>
+    <div class="code_acount">扫一扫登录</div>
+  </div>
+
+  <form #loginForm="ngForm" method="post" class="login_form" (ngSubmit)="submit(loginForm.value)">
+    <ion-item>
+        账户：
+        <input type="text" name="username" [(ngModel)]="info.username">
+        <ion-icon class="close_icon" name="close-circle" (click)="clearVal()" ></ion-icon>
+      </ion-item>
+    <ion-item>
+      密码：
+      <input type="{{inputType}}" name="password" [(ngModel)]="info.password" >
+      <ion-icon class="eye_icon" name="{{eyeStatus}}" (click)="changeType()"></ion-icon>
+    </ion-item>
+    <button ion-button block type="submit" class="login_btn">登录</button>
+  </form>
+  <button (click)="goCalendar()">calendar</button>
+  <div class="forget_password">忘记密码</div>
+  <div class="footer">
+    <div class="footer_title">更多登录方式</div>
+    <div class="wechat_box" (click)="goWxLogin()">
+      <ion-icon ios="ios-chatbubbles" md="md-chatbubbles"></ion-icon>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,14 @@
+
+.tips_box {
+  text-align: center;
+  padding-top: 100px;
+  ion-icon {
+    font-size: 8rem;
+    color:$colorGray;
+  }
+  .tips {
+    color:$colorBlack;
+    font-size: $fontSize16;
+    margin-top:20px;
+  }
+}
